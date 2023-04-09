@@ -33,6 +33,9 @@ Module.register("MMM-JsonGraph", {
 	// Request node_helper to get json from url
 	getJson: function () {
 		this.sendSocketNotification("MMM-JsonGraph_GET_JSON", this.config.url);
+    // fetch.("/tmp/mi/test.json")
+    //   .then(response => response.json())
+    //   .then(json => console.log(json));
 	},
 
 	socketNotificationReceived: function (notification, payload) {
